@@ -1,0 +1,90 @@
+@import "null.css";
+/* ============================================================================================================================= */
+/*====== Подключаемые Шрифты======= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/*====================================== */
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-family: Lato;
+	background-color: rgba(42, 15, 73, 0.534);
+	/* background: linear-gradient(55.95deg, #FF3F3A33 0%, #F75E0533 100%); */
+}
+[class*="__container"]{
+	max-width: 1260px;
+	margin: 0px auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.main {
+}
+.main__title {
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+.main__form {
+
+}
+.form {
+	padding: 1rem;
+}
+.form__line {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+.form__count{
+	flex: 0 1 20%;
+	visibility: hidden;
+	opacity: 0;
+	transition:opacity 2s ease;
+
+}
+.form__count._active{
+	
+	visibility: visible;
+	opacity: 1;
+}
+.form__input {
+	padding: 0.8rem;
+	border-radius: 20px;
+	margin-bottom: 1rem;
+}
+.form__btn {
+	max-width: 5rem;
+	flex: 0 1 auto;
+	display: block;
+
+}
+.form__btn:hover{
+	transform: scale(1.2);
+}
+.form__btn:active{
+	transform: scale(1);
+}
+.form__btn._active{
+	opacity: 0.3;
+	cursor: default;
+}
+.form__btn._active:hover{
+	transform: none;
+	cursor: default;
+}
+.form__btn._active:active{
+	transform: none;
+	cursor: default;
+}
+.form__btn img{
+	width: 100%;
+}
+.footer {
+}
